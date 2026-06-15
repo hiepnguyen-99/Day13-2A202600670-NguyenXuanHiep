@@ -1,12 +1,12 @@
 {
-  "team": "TODO-team-name",
+  "team": "Nguyễn Xuân Hiệp",
   "schema_version": 1,
   "findings": [
     {
-      "fault_class": "latency_spike",
-      "evidence": {"metric": "latency_p95_ms", "observed": "TODO from your telemetry", "trace_ids": []},
-      "root_cause": "TODO: what config knob or behavior causes it?",
-      "suggested_fix": "TODO: config change and/or wrapper mitigation"
+      "fault_class": "arithmetic_error",
+      "evidence": { "metric": "wrong_total_rate", "observed": "12/200", "trace_ids": ["req-1a2b3c4d"] },
+      "root_cause": "temperature=1.6 lam model tinh nham; prompt khong ep cong thuc //100",
+      "suggested_fix": "giam temperature=0.2, self_consistency=2; prompt ep cong thuc va tu verify"
     }
   ]
 }
